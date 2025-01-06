@@ -9,3 +9,6 @@ pyt.pytesseract.tesseract_cmd = "C:\\Users\\HP\\AppData\\Local\\Programs\\Tesser
 text = pyt.image_to_string(img)
 
 print(text)
+
+with open("text_file.txt", "w+") as f:
+    f.write(text)
